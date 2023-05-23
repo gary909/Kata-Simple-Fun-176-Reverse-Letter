@@ -1,8 +1,7 @@
 function reverseLetter(str) {
-    //coding and coding..
-    const replaced = str.replace(/[^a-z0-9]/gi, '');
-    return replaced;
-    
+    //remove non alpha char..
+    let replaced = str.replace(/[^a-z]/gi, '');
+    return replaced.split("").reverse().join("");; 
 }
 
 console.log(reverseLetter("krishan")); // "nahsirk"
